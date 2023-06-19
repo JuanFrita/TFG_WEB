@@ -1,0 +1,17 @@
+{
+  "name": "tfg_web",
+  "version": "1.0.0",
+  "description": "Web para monitorizar la ocupación de una playa vía imágenes",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "node index.js"
+  },
+  "author": "Juan Francisco Sánchez García",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0"
+  }
+}
