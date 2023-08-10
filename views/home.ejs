@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monitorización automática de playas.</title>
 
     <!-- Includes de css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/home.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="css/home.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-
+  <body id="b-home">
     <%- include('components/header') %>
 
-    <article class="container p-5 d-flex justify-content-center flex-column">
-        <section id="frase-inicial" class="text-center">
-            <h1 class="display-5"><strong class="fw-bold underlined">Monitoriza</strong> la <strong class="fw-bold underlined">ocupación</strong> de playas</h1>
-        </section>
-        <section id="load-imagenes">
-
-        </section>
+    <article id="a-home" class="container p-5 d-flex flex-column min-100">
+      <section id="s-inicial">
+        <h1 class="display-5 text-center mb-4 fw-bolder">
+          Monitoriza la ocupación de playas
+        </h1>
+        <div class="card mb-3">
+          <p class="text-left card-body m-0">
+            Sube la imagen que quieras de una playa y podrás saber el número de
+            personas. Ten en cuenta que la calidad de la imagen, el tamaño de
+            las personas y la perspectiva juegan un papel importante pero eso te
+            lo explico más detalladamente aquí.
+          </p>
+        </div>
+      </section>
+      <section id="s-load-imagen">
+        <div class="form-group mb-3 col-lg-5 col-md-5 col">
+          <label><strong>Selecciona una imagen:</strong></label>
+          <input
+            type="file"
+            class="form-control"
+            id="i-imagen"
+            name="imageInput"
+          />
+        </div>
+        <canvas
+          id="c-imagen"
+          class="canvas-img mw-100"
+          src="#"
+          alt="La imagen aparecerá aquí"
+        >
+        </canvas>
+      </section>
     </article>
 
     <%- include('components/footer') %>
 
     <!-- Includes de js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/home.js"></script>
+  </body>
 </html>

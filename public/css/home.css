@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #fff;
 }
 
 .logo {
@@ -42,17 +43,17 @@ footer>p {
 }
 
 h1 {
-    color: #000000;
+    color: #fff;
 }
 
 .underlined::after {
     content: "";
     position: absolute;
     left: 10px;
-    top: 29%;
+    top: 35%;
     width: 100%;
     height: 0.8em;
-    background-color: #2ca3f88f;
+    background-color: #81dbff8f;
     z-index: -1;
 }
 
@@ -60,4 +61,33 @@ h1 {
     position: relative;
     display: inline-block;
     margin-right: 10px;
+}
+
+.min-100{
+    min-height: 100vh;
+}
+
+section p{
+    font-size: 1.1rem;
+}
+
+section label{
+    color: #fff;
+}
+
+#b-home{
+    background: linear-gradient(rgba(56, 149, 255, 0.9),
+    rgba(56, 149, 255, 0.8),
+    rgba(56, 149, 255, 0.4),
+    rgba(56, 149, 255, 0.1)),
+    url('http://www.cabrahotels.com/assets/mallora-beach.webp');
+    background-size: cover;
+    background-position: center;   
+    background-attachment: fixed;     
+}
+
+.canvas-img{
+    border: #fff 2px solid;
+    border-radius: 20px;
+    display: none;
 }
